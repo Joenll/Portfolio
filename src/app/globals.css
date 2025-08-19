@@ -1,8 +1,11 @@
 @import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FAF7F3; /* fixed background color */
+  --foreground: #171717; /* fixed text color */
 }
 
 @theme inline {
@@ -12,15 +15,30 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Remove dark mode overrides */
 body {
-  background: var(--background);
+  background: var(--background); /* 85% opaque white */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* globals.css */
+.text-outline-depth {
+  -webkit-text-stroke: 1px #1f2937; /* outline */
+  color: transparent;
+  text-shadow: 
+    2px 2px 4px rgba(255, 255, 255, 0.6),   
+    -2px -2px 4px rgba(9, 9, 9, 0.2);
+}
+.text-outline-depth2 {
+  -webkit-text-stroke: 1px #1f2937; 
+  color: transparent;
+  text-shadow: 
+    2px 2px 4px rgba(255, 255, 255, 0.6),
+    -2px -2px 4px rgba(213, 213, 213, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 65px;
 }
