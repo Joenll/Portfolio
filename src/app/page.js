@@ -78,9 +78,11 @@ export default function Home() {
     <p className="text-base sm:text-lg text-gray-600 text-center sm:mt-[50px] md:mt-[100px]">
       Explore my projects, learn about me, <br /> and get in touch!
     </p>
-    <img
+    <Image
       src="/p1.png"
       alt="Portfolio"
+      width={400}
+      height={400}
       className="w-48 sm:w-60 md:w-72 h-auto mb-8 shadow-lg rounded-lg mx-auto sm:mx-0"
     />
   </motion.div>
@@ -259,7 +261,7 @@ export default function Home() {
     >
       <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-4 lg:mb-6">About Me</h1>
       <p className="text-sm sm:text-md lg:text-md text-gray-600">
-        My name is Jonelle Manalastas, and I'm a 23-year-old aspiring developer that is passionate about technology and continuous learning. I've worked in web and mobile development before, and I want to continue working on creative and meaningful projects.
+        My name is Jonelle Manalastas, and I&apos;m a 23-year-old aspiring developer that is passionate about technology and continuous learning. I&apos;ve worked in web and mobile development before, and I want to continue working on creative and meaningful projects.
       </p>
     </motion.div>
 
